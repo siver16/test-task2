@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="width:800px;">
+    <div style="border: 1px solid ;  padding:5px;">
+        <h3 style="text-align: center;">Winners.</h3>
+        <p align="center"><input type="button" id="new_winner" value="new winner"></p>
+        <p align="center"><textarea id="winnerName" style="width:500px"></textarea></p>
+    </div>
+    <div style="border: 1px solid ;  padding:5px;">
+        <h3 style="text-align: center;">Registration form.</h3>
+        <table  width="100%">
+            <tbody>
+            <tr>
+                <td align="right" width="50%">
+                    Name*:
+                </td>
+                <td>
+                    <input type="text" id="name" style="width: 40%">
+                </td>
+            </tr>
+            <tr>
+                <td align="right" width="50%">
+                    Surname*:
+                </td>
+                <td>
+                    <input type="text" id="surname"  style="width: 40%">
+                </td>
+            </tr>
+            <tr>
+                <td align="right" width="50%">
+                    Email*:
+                </td>
+                <td>
+                    <input type="email" id="email"  style="width: 40%">
+                </td>
+            </tr>
+            <tr>
+                <td align="right" width="50%">
+                    Phone:
+                </td>
+                <td>
+                    <input type="text" id="phone" onkeyup="this.value=this.value.replace(/[^\d]/,'')" style="width: 40%">
+                </td>
+            </tr>
+            <tr>
+                <td align="right" width="50%">
+                    Date of birth:
+                </td>
+                <td>
+                    <input type="date" id="date" style="width: 40%" >
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <p align="center"><input type="button" id="save" value="save"></p>
+        <p align="right"><i>* required fields</i></p>
+
+    </div>
+    <div  style="border: 1px solid ; padding:5px;">
+        <h3 style="text-align: center;">Members.</h3>
+
+        <table id="tab" border style="width: 100%;">
+            <tbody>
+            <tr >
+                <td>Name</td>
+                <td>Surname</td>
+                <td>Email</td>
+                <td>Phone</td>
+                <td>Date of birth</td>
+                <td><p><input type="button" id="deleteAll" value="delete all"></p></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="lot.js"></script>
+</body>
+</html>
